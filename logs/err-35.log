@@ -1,0 +1,552 @@
+2026-04-29 23:19:31: Traceback (most recent call last):
+2026-04-29 23:19:31:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:31:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:31:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:31:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:31: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:33: Traceback (most recent call last):
+2026-04-29 23:19:33:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:33:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:33:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:33:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:33: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:34: Traceback (most recent call last):
+2026-04-29 23:19:34:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:34:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:34:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:34:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:34: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:35: Traceback (most recent call last):
+2026-04-29 23:19:35:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:35:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:35:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:35:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:35: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:36: Traceback (most recent call last):
+2026-04-29 23:19:36:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:36:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:36:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:36:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:36: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:38: Traceback (most recent call last):
+2026-04-29 23:19:38:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:38:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:38:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:38:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:38: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:39: Traceback (most recent call last):
+2026-04-29 23:19:39:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:39:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:39:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:39:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:39: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:40: Traceback (most recent call last):
+2026-04-29 23:19:40:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:40:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:40:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:40:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:40: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:42: Traceback (most recent call last):
+2026-04-29 23:19:42:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:42:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:42:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:42:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:42: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:43: Traceback (most recent call last):
+2026-04-29 23:19:43:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:43:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:43:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:43:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:43: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:44: Traceback (most recent call last):
+2026-04-29 23:19:44:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:44:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:44:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:44:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:44: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:45: Traceback (most recent call last):
+2026-04-29 23:19:45:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:45:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:45:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:45:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:45: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:47: Traceback (most recent call last):
+2026-04-29 23:19:47:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:47:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:47:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:47:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:47: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:48: Traceback (most recent call last):
+2026-04-29 23:19:48:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:48:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:48:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:48:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:48: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:49: Traceback (most recent call last):
+2026-04-29 23:19:49:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:49:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:49:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:49:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:49: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:51: Traceback (most recent call last):
+2026-04-29 23:19:51:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:51:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:51:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:51:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:51: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:52: Traceback (most recent call last):
+2026-04-29 23:19:52:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:52:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:52:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:52:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:52: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:53: Traceback (most recent call last):
+2026-04-29 23:19:53:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:53:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:53:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:53:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:53: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:54: Traceback (most recent call last):
+2026-04-29 23:19:54:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:54:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:54:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:54:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:54: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:56: Traceback (most recent call last):
+2026-04-29 23:19:56:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:56:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:56:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:56:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:56: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:57: Traceback (most recent call last):
+2026-04-29 23:19:57:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:57:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:57:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:57:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:57: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:19:58: Traceback (most recent call last):
+2026-04-29 23:19:58:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:19:58:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:19:58:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:19:58:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:19:58: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:00: Traceback (most recent call last):
+2026-04-29 23:20:00:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:00:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:00:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:00:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:00: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:01: Traceback (most recent call last):
+2026-04-29 23:20:01:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:01:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:01:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:01:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:01: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:02: Traceback (most recent call last):
+2026-04-29 23:20:02:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:02:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:02:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:02:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:02: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:03: Traceback (most recent call last):
+2026-04-29 23:20:03:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:03:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:03:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:03:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:03: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:05: Traceback (most recent call last):
+2026-04-29 23:20:05:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:05:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:05:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:05:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:05: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:06: Traceback (most recent call last):
+2026-04-29 23:20:06:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:06:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:06:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:06:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:06: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:07: Traceback (most recent call last):
+2026-04-29 23:20:07:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:07:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:07:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:07:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:07: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:09: Traceback (most recent call last):
+2026-04-29 23:20:09:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:09:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:09:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:09:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:09: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:10: Traceback (most recent call last):
+2026-04-29 23:20:10:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:10:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:10:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:10:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:10: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:11: Traceback (most recent call last):
+2026-04-29 23:20:11:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:11:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:11:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:11:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:11: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:12: Traceback (most recent call last):
+2026-04-29 23:20:12:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:12:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:12:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:12:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:12: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:14: Traceback (most recent call last):
+2026-04-29 23:20:14:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:14:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:14:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:14:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:14: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:15: Traceback (most recent call last):
+2026-04-29 23:20:15:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:15:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:15:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:15:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:15: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:16: Traceback (most recent call last):
+2026-04-29 23:20:16:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:16:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:16:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:16:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:16: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:18: Traceback (most recent call last):
+2026-04-29 23:20:18:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:18:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:18:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:18:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:18: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:19: Traceback (most recent call last):
+2026-04-29 23:20:19:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:19:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:19:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:19:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:19: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:20: Traceback (most recent call last):
+2026-04-29 23:20:20:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:20:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:20:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:20:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:20: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:22: Traceback (most recent call last):
+2026-04-29 23:20:22:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:22:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:22:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:22:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:22: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:23: Traceback (most recent call last):
+2026-04-29 23:20:23:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:23:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:23:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:23:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:23: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:24: Traceback (most recent call last):
+2026-04-29 23:20:24:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:24:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:24:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:24:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:24: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:25: Traceback (most recent call last):
+2026-04-29 23:20:25:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:25:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:25:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:25:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:25: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:27: Traceback (most recent call last):
+2026-04-29 23:20:27:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:27:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:27:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:27:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:27: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:28: Traceback (most recent call last):
+2026-04-29 23:20:28:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:28:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:28:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:28:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:28: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:29: Traceback (most recent call last):
+2026-04-29 23:20:29:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:29:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:29:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:29:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:29: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:31: Traceback (most recent call last):
+2026-04-29 23:20:31:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:31:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:31:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:31:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:31: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:32: Traceback (most recent call last):
+2026-04-29 23:20:32:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:32:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:32:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:32:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:32: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:33: Traceback (most recent call last):
+2026-04-29 23:20:33:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:33:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:33:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:33:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:33: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:34: Traceback (most recent call last):
+2026-04-29 23:20:34:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:34:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:34:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:34:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:34: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:36: Traceback (most recent call last):
+2026-04-29 23:20:36:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:36:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:36:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:36:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:36: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:37: Traceback (most recent call last):
+2026-04-29 23:20:37:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:37:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:37:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:37:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:37: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:38: Traceback (most recent call last):
+2026-04-29 23:20:38:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:38:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:38:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:38:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:38: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:40: Traceback (most recent call last):
+2026-04-29 23:20:40:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:40:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:40:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:40:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:40: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:41: Traceback (most recent call last):
+2026-04-29 23:20:41:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:41:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:41:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:41:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:41: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:42: Traceback (most recent call last):
+2026-04-29 23:20:42:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:42:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:42:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:42:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:42: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:43: Traceback (most recent call last):
+2026-04-29 23:20:43:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:43:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:43:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:43:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:43: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:45: Traceback (most recent call last):
+2026-04-29 23:20:45:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:45:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:45:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:45:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:45: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:46: Traceback (most recent call last):
+2026-04-29 23:20:46:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:46:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:46:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:46:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:46: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:47: Traceback (most recent call last):
+2026-04-29 23:20:47:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:47:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:47:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:47:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:47: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:48: Traceback (most recent call last):
+2026-04-29 23:20:48:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:48:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:48:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:48:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:48: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:50: Traceback (most recent call last):
+2026-04-29 23:20:50:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:50:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:50:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:50:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:50: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:51: Traceback (most recent call last):
+2026-04-29 23:20:51:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:51:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:51:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:51:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:51: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:52: Traceback (most recent call last):
+2026-04-29 23:20:52:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:52:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:52:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:52:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:52: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:54: Traceback (most recent call last):
+2026-04-29 23:20:54:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:54:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:54:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:54:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:54: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:55: Traceback (most recent call last):
+2026-04-29 23:20:55:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:55:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:55:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:55:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:55: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:56: Traceback (most recent call last):
+2026-04-29 23:20:56:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:56:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:56:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:56:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:56: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:58: Traceback (most recent call last):
+2026-04-29 23:20:58:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:58:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:58:   File "/var/www/63mcp/src/mcp_server/server.py", line 24, in <module>
+2026-04-29 23:20:58:     from mcp.server.fastmcp import FastMCP
+2026-04-29 23:20:58: ModuleNotFoundError: No module named 'mcp'
+2026-04-29 23:20:59: Traceback (most recent call last):
+2026-04-29 23:20:59:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:20:59:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:20:59:   File "/var/www/63mcp/src/mcp_server/server.py", line 22, in <module>
+2026-04-29 23:20:59:     from datasets import load_dataset
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/datasets/__init__.py", line 17, in <module>
+2026-04-29 23:20:59:     from .arrow_dataset import Column, Dataset
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 79, in <module>
+2026-04-29 23:20:59:     from .arrow_reader import ArrowReader
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/datasets/arrow_reader.py", line 30, in <module>
+2026-04-29 23:20:59:     from .download.download_config import DownloadConfig  # noqa: F401
+2026-04-29 23:20:59:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/datasets/download/__init__.py", line 9, in <module>
+2026-04-29 23:20:59:     from .download_manager import DownloadManager, DownloadMode
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/datasets/download/download_manager.py", line 32, in <module>
+2026-04-29 23:20:59:     from ..utils.file_utils import (
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/datasets/utils/file_utils.py", line 49, in <module>
+2026-04-29 23:20:59:     from aiohttp.client_exceptions import ClientError as _AiohttpClientError
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/aiohttp/__init__.py", line 6, in <module>
+2026-04-29 23:20:59:     from .client import (
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/aiohttp/client.py", line 87, in <module>
+2026-04-29 23:20:59:     from .connector import (
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 934, in <module>
+2026-04-29 23:20:59:     _SSL_CONTEXT_UNVERIFIED = _make_ssl_context(False)
+2026-04-29 23:20:59:                               ^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-29 23:20:59:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/aiohttp/connector.py", line 924, in _make_ssl_context
+2026-04-29 23:20:59:     sslcontext.set_default_verify_paths()
+2026-04-29 23:20:59: KeyboardInterrupt
+2026-04-29 23:21:00: INFO:     Started server process [1206596]
+2026-04-29 23:21:00: INFO:     Waiting for application startup.
+2026-04-29 23:21:00: [04/29/26 23:21:00] INFO     StreamableHTTP       streamable_http_manager.py:128
+2026-04-29 23:21:00:                              session manager                                    
+2026-04-29 23:21:00:                              started                                            
+2026-04-29 23:21:00: INFO:     Application startup complete.
+2026-04-29 23:21:00: INFO:     Uvicorn running on http://0.0.0.0:8780 (Press CTRL+C to quit)
+2026-04-29 23:21:17: [04/29/26 23:21:17] INFO     Created new          streamable_http_manager.py:255
+2026-04-29 23:21:17:                              transport with                                     
+2026-04-29 23:21:17:                              session ID:                                        
+2026-04-29 23:21:17:                              8655859abc2849bba57d                               
+2026-04-29 23:21:17:                              18d56454b950                                       
+2026-04-29 23:21:17:                     WARNING  Invalid Host header:       transport_security.py:64
+2026-04-29 23:21:17:                              mcp.electionmcp.kr                                 
+2026-04-29 23:22:01: INFO:     Shutting down
+2026-04-29 23:22:01: INFO:     Waiting for application shutdown.
+2026-04-29 23:22:01: [04/29/26 23:22:01] INFO     StreamableHTTP       streamable_http_manager.py:132
+2026-04-29 23:22:01:                              session manager                                    
+2026-04-29 23:22:01:                              shutting down                                      
+2026-04-29 23:22:01: INFO:     Application shutdown complete.
+2026-04-29 23:22:01: INFO:     Finished server process [1206596]
+2026-04-29 23:22:01: Traceback (most recent call last):
+2026-04-29 23:22:01:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-04-29 23:22:01:     return self._loop.run_until_complete(task)
+2026-04-29 23:22:01:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-29 23:22:01:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-04-29 23:22:01:     return future.result()
+2026-04-29 23:22:01:            ^^^^^^^^^^^^^^^
+2026-04-29 23:22:01: asyncio.exceptions.CancelledError
+2026-04-29 23:22:01: 
+2026-04-29 23:22:01: During handling of the above exception, another exception occurred:
+2026-04-29 23:22:01: 
+2026-04-29 23:22:01: Traceback (most recent call last):
+2026-04-29 23:22:01:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:22:01:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:22:01:   File "/var/www/63mcp/src/mcp_server/server.py", line 262, in <module>
+2026-04-29 23:22:01:     except Exception as e:
+2026-04-29 23:22:01:     ^^^^^^
+2026-04-29 23:22:01:   File "/var/www/63mcp/src/mcp_server/server.py", line 258, in main
+2026-04-29 23:22:01:     try:
+2026-04-29 23:22:01:     ^^^^^
+2026-04-29 23:22:01:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/mcp/server/fastmcp/server.py", line 300, in run
+2026-04-29 23:22:01:     anyio.run(self.run_streamable_http_async)
+2026-04-29 23:22:01:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/anyio/_core/_eventloop.py", line 77, in run
+2026-04-29 23:22:01:     return async_backend.run(func, args, {}, backend_options)
+2026-04-29 23:22:01:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-04-29 23:22:01:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2358, in run
+2026-04-29 23:22:01:     return runner.run(wrapper())
+2026-04-29 23:22:01:            ^^^^^^^^^^^^^^^^^^^^^
+2026-04-29 23:22:01:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-04-29 23:22:01:     raise KeyboardInterrupt()
+2026-04-29 23:22:01: KeyboardInterrupt
+2026-04-29 23:22:02: INFO:     Started server process [1207682]
+2026-04-29 23:22:02: INFO:     Waiting for application startup.
+2026-04-29 23:22:02: [04/29/26 23:22:02] INFO     StreamableHTTP       streamable_http_manager.py:128
+2026-04-29 23:22:02:                              session manager                                    
+2026-04-29 23:22:02:                              started                                            
+2026-04-29 23:22:02: INFO:     Application startup complete.
+2026-04-29 23:22:02: INFO:     Uvicorn running on http://0.0.0.0:8780 (Press CTRL+C to quit)
+2026-04-29 23:22:06: [04/29/26 23:22:06] INFO     Created new          streamable_http_manager.py:255
+2026-04-29 23:22:06:                              transport with                                     
+2026-04-29 23:22:06:                              session ID:                                        
+2026-04-29 23:22:06:                              50c38b2ff76545238b9b                               
+2026-04-29 23:22:06:                              01d0390746f9                                       
+2026-04-29 23:22:06:                     WARNING  Invalid Host header:       transport_security.py:64
+2026-04-29 23:22:06:                              mcp.electionmcp.kr                                 
+2026-04-29 23:22:25: [04/29/26 23:22:25] INFO     Created new          streamable_http_manager.py:255
+2026-04-29 23:22:25:                              transport with                                     
+2026-04-29 23:22:25:                              session ID:                                        
+2026-04-29 23:22:25:                              649fb7fd1709403a9542                               
+2026-04-29 23:22:25:                              55d7b71cdf7e                                       
+2026-04-29 23:22:25:                     WARNING  Invalid Host header:       transport_security.py:64
+2026-04-29 23:22:25:                              mcp.electionmcp.kr                                 
+2026-04-29 23:22:41: [04/29/26 23:22:41] INFO     Created new          streamable_http_manager.py:255
+2026-04-29 23:22:41:                              transport with                                     
+2026-04-29 23:22:41:                              session ID:                                        
+2026-04-29 23:22:41:                              329a692bd023412abe95                               
+2026-04-29 23:22:41:                              f45024449975                                       
+2026-04-29 23:22:41:                     WARNING  Invalid Host header:       transport_security.py:64
+2026-04-29 23:22:41:                              mcp.electionmcp.kr                                 
+2026-04-29 23:23:49: INFO:     Shutting down
+2026-04-29 23:23:49: INFO:     Waiting for application shutdown.
+2026-04-29 23:23:49: [04/29/26 23:23:49] INFO     StreamableHTTP       streamable_http_manager.py:132
+2026-04-29 23:23:49:                              session manager                                    
+2026-04-29 23:23:49:                              shutting down                                      
+2026-04-29 23:23:49: INFO:     Application shutdown complete.
+2026-04-29 23:23:49: INFO:     Finished server process [1207682]
+2026-04-29 23:23:49: Traceback (most recent call last):
+2026-04-29 23:23:49:   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+2026-04-29 23:23:49:     return self._loop.run_until_complete(task)
+2026-04-29 23:23:49: ^^^^^^^^^^^^^^^^^^
+2026-04-29 23:23:49:   File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+2026-04-29 23:23:49:     return future.result()
+2026-04-29 23:23:49:            ^^^^^^^^^^^^^^^
+2026-04-29 23:23:49: asyncio.exceptions.CancelledError
+2026-04-29 23:23:49: 
+2026-04-29 23:23:49: During handling of the above exception, another exception occurred:
+2026-04-29 23:23:49: 
+2026-04-29 23:23:49: Traceback (most recent call last):
+2026-04-29 23:23:49:   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-04-29 23:23:49:   File "<frozen runpy>", line 88, in _run_code
+2026-04-29 23:23:49:   File "/var/www/63mcp/src/mcp_server/server.py", line 282, in <module>
+2026-04-29 23:23:49:     main()
+2026-04-29 23:23:49:   File "/var/www/63mcp/src/mcp_server/server.py", line 278, in main
+2026-04-29 23:23:49:     mcp.run(transport="streamable-http")
+2026-04-29 23:23:49:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/mcp/server/fastmcp/server.py", line 300, in run
+2026-04-29 23:23:49:     anyio.run(self.run_streamable_http_async)
+2026-04-29 23:23:49:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/anyio/_core/_eventloop.py", line 77, in run
+2026-04-29 23:23:49:     return async_backend.run(func, args, {}, backend_options)
+2026-04-29 23:23:49: ^^^^^^^^^^^^^^^^^^^^
+2026-04-29 23:23:49:   File "/var/www/63mcp/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2358, in run
+2026-04-29 23:23:49:     return runner.run(wrapper())
+2026-04-29 23:23:49:            ^^^^^^^^^^^^^^^^^^^^^
+2026-04-29 23:23:49:   File "/usr/lib/python3.12/asyncio/runners.py", line 123, in run
+2026-04-29 23:23:49:     raise KeyboardInterrupt()
+2026-04-29 23:23:49: KeyboardInterrupt

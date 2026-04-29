@@ -1,0 +1,21 @@
+2026-04-29 23:23:51: INFO:     Started server process [1209396]
+2026-04-29 23:23:51: INFO:     Waiting for application startup.
+2026-04-29 23:23:51: [04/29/26 23:23:51] INFO     StreamableHTTP       streamable_http_manager.py:128
+2026-04-29 23:23:51:                              session manager                                    
+2026-04-29 23:23:51:                              started                                            
+2026-04-29 23:23:51: INFO:     Application startup complete.
+2026-04-29 23:23:51: INFO:     Uvicorn running on http://0.0.0.0:8780 (Press CTRL+C to quit)
+2026-04-29 23:23:55: [04/29/26 23:23:55] INFO     Created new          streamable_http_manager.py:255
+2026-04-29 23:23:55:                              transport with                                     
+2026-04-29 23:23:55:                              session ID:                                        
+2026-04-29 23:23:55:                              529fdca943c44719920d                               
+2026-04-29 23:23:55:                              2c96090f4fe8                                       
+2026-04-29 23:24:10: [04/29/26 23:24:10] INFO     Created new          streamable_http_manager.py:255
+2026-04-29 23:24:10:                              transport with                                     
+2026-04-29 23:24:10:                              session ID:                                        
+2026-04-29 23:24:10:                              b86974ff9cca45259304                               
+2026-04-29 23:24:10:                              863a13c4d972                                       
+2026-04-29 23:24:12: [04/29/26 23:24:12] INFO     Processing request of type            server.py:727
+2026-04-29 23:24:12:                              ListToolsRequest                                   
+2026-04-29 23:24:13: [04/29/26 23:24:13] INFO     Processing request of type            server.py:727
+2026-04-29 23:24:13:                              CallToolRequest                                    

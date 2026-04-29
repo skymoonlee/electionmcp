@@ -60,6 +60,25 @@ def get_db() -> duckdb.DuckDBPyConnection:
 
 # ---------- MCP 서버 ----------
 
+def _build_transport_security():
+    """리버스 프록시 환경에서 외부 도메인을 허용하도록 trusted hosts 설정.
+    환경변수 ALLOWED_HOSTS 로 추가 (콤마 구분).
+    """
+    from mcp.server.transport_security import TransportSecuritySettings
+    base_hosts = ["127.0.0.1:*", "localhost:*", "[::1]:*"]
+    base_origins = ["http://127.0.0.1:*", "http://localhost:*", "http://[::1]:*"]
+    extra_hosts = [h.strip() for h in os.getenv("ALLOWED_HOSTS", "").split(",") if h.strip()]
+    extra_origins: list[str] = []
+    for h in extra_hosts:
+        # http/https 양쪽 다 허용
+        extra_origins += [f"https://{h}", f"http://{h}"]
+    return TransportSecuritySettings(
+        enable_dns_rebinding_protection=True,
+        allowed_hosts=base_hosts + extra_hosts,
+        allowed_origins=base_origins + extra_origins,
+    )
+
+
 mcp = FastMCP(
     "korea-election-2026",
     instructions=(
@@ -68,6 +87,7 @@ mcp = FastMCP(
         "정보 제공만 하며 후보 추천이나 평가 의견은 제시하지 않습니다.\n"
         "출처: 중앙선거관리위원회 공공데이터포털"
     ),
+    transport_security=_build_transport_security(),
 )
 
 
