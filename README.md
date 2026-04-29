@@ -122,11 +122,31 @@ stage            preliminary | official
 
 ---
 
-## MCP 클라이언트 연결
+## 설치
 
-### Claude Desktop
+본 서비스는 **Streamable HTTP** transport(MCP 사양 2025-03-26)로 운영된다.
+별도 패키지 설치·로컬 실행 불필요. 클라이언트가 HTTPS로 직접 연결한다.
 
-`~/.claude.json` 또는 OS별 설정 파일에 추가:
+### Claude Code (CLI)
+
+가장 간단한 방법 — 한 줄 명령어로 등록:
+
+```bash
+claude mcp add --transport http electionmcp https://mcp.electionmcp.kr/mcp
+```
+
+등록 확인:
+
+```bash
+claude mcp list
+```
+
+### Claude Desktop (macOS / Windows)
+
+설정 파일에 다음 블록 추가:
+
+- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
@@ -139,12 +159,47 @@ stage            preliminary | official
 }
 ```
 
-Claude 재시작 후 자연어로 질의 가능.
+저장 후 Claude Desktop 재시작.
 
-### 기타 클라이언트
+### Cursor
 
-Streamable HTTP transport(MCP 사양 2025-03-26)를 지원하는 모든 클라이언트:
-Cline, Cursor, Continue, 자체 구현 등.
+`Settings → Cursor Settings → MCP → Add new MCP server`:
+
+```json
+{
+  "electionmcp": {
+    "url": "https://mcp.electionmcp.kr/mcp"
+  }
+}
+```
+
+### Cline (VS Code 확장)
+
+`Cline 설정 → MCP Servers → Add Remote Server`:
+
+```
+Name : electionmcp
+URL  : https://mcp.electionmcp.kr/mcp
+Type : streamable-http
+```
+
+### 연결 검증
+
+설치 후 클라이언트에서 다음과 같이 질의해 동작을 확인할 수 있다:
+
+```
+"electionmcp으로 서울 시·도지사 후보 조회해줘"
+"강남구 시장 후보 누구야"
+```
+
+응답에 후보자 목록이 출처와 함께 반환되면 정상.
+
+서버 헬스체크는 브라우저로도 가능:
+
+```
+https://mcp.electionmcp.kr/health
+→ {"status":"ok","candidates":9215,...}
+```
 
 ---
 
