@@ -6,3 +6,7 @@ __pycache__/
 data/
 _dataset_README.md
 .DS_Store
+
+# 로컬 전용 기획 문서
+flow_*.md
+.claude/

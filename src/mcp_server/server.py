@@ -248,7 +248,7 @@ async def healthcheck(request: Request):
 def main():
     """HTTP 트랜스포트로 MCP 서버 실행."""
     host = os.getenv("MCP_HOST", "0.0.0.0")
-    port = int(os.getenv("MCP_PORT", "8765"))
+    port = int(os.getenv("MCP_PORT", "8780"))
 
     get_db()  # 워밍업
     print(f"MCP server starting on http://{host}:{port}/mcp (health: /health)")

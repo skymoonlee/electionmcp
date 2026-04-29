@@ -10,16 +10,16 @@ services:
     container_name: election-mcp
     restart: unless-stopped
     ports:
-      - "8765:8765"
+      - "8780:8780"
     environment:
       - HF_DATASET_REPO=${HF_DATASET_REPO}
       - LOCAL_PARQUET=/app/data/parquet/all.parquet
       - MCP_HOST=0.0.0.0
-      - MCP_PORT=8765
+      - MCP_PORT=8780
     volumes:
       - ./data:/app/data:ro
     healthcheck:
-      test: ["CMD", "curl", "-fsS", "http://localhost:8765/health"]
+      test: ["CMD", "curl", "-fsS", "http://localhost:8780/health"]
       interval: 30s
       timeout: 10s
       retries: 3

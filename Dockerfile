@@ -40,9 +40,9 @@ COPY pyproject.toml ./
 
 ENV PYTHONPATH=/app/src
 ENV MCP_HOST=0.0.0.0
-ENV MCP_PORT=8765
+ENV MCP_PORT=8780
 
-EXPOSE 8765
+EXPOSE 8780
 VOLUME ["/app/data"]
 
 CMD ["python", "-m", "mcp_server.server"]
