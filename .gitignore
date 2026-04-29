@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+data/
+_dataset_README.md
+.DS_Store

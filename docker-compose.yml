@@ -1,0 +1,44 @@
+# Docker Compose 배포 설정
+# 두 컨테이너로 분리:
+#   - mcp:    24/7 MCP 서버 (Parquet 읽어서 응답)
+#   - ingest: 주기적 데이터 수집 (수동 실행: docker compose --profile manual run ingest)
+
+services:
+  mcp:
+    build: .
+    image: korea-election-mcp:latest
+    container_name: election-mcp
+    restart: unless-stopped
+    ports:
+      - "8765:8765"
+    environment:
+      - HF_DATASET_REPO=${HF_DATASET_REPO}
+      - LOCAL_PARQUET=/app/data/parquet/all.parquet
+      - MCP_HOST=0.0.0.0
+      - MCP_PORT=8765
+    volumes:
+      - ./data:/app/data:ro
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8765/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  ingest:
+    build: .
+    image: korea-election-mcp:latest
+    container_name: election-ingest
+    profiles: ["manual"]
+    environment:
+      - NEC_API_KEY=${NEC_API_KEY}
+      - HF_TOKEN=${HF_TOKEN}
+      - HF_DATASET_REPO=${HF_DATASET_REPO}
+      - SG_ID=${SG_ID:-20260603}
+      - CANDIDATE_STAGE=${CANDIDATE_STAGE:-official}
+      - DATA_DIR=/app/data
+      - NEC_RPS=${NEC_RPS:-5}
+      - PDF_CONCURRENCY=${PDF_CONCURRENCY:-10}
+    volumes:
+      - ./data:/app/data
+    command: python -m pipeline.ingest all
