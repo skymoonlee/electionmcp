@@ -26,6 +26,17 @@ log = logging.getLogger(__name__)
 
 INFO_NEC_BASE = "https://info.nec.go.kr"
 
+# 정보공개자료 종류 (gubun 코드 — info.nec.go.kr 의 JS 분석으로 확정)
+DISCLOSURE_GUBUN = {
+    "education":         "1",  # 학력
+    "assets":            "2",  # 재산
+    "tax":               "3",  # 납세
+    "military":          "4",  # 병역
+    "criminal":          "5",  # 전과
+    "career_edu":        "6",  # 교육경력
+    "career_political":  "8",  # 공직선거경력
+}
+
 # PaddleOCR 인스턴스는 무거워서 lazy 싱글톤
 _ocr_instance = None
 
@@ -134,83 +145,112 @@ class PDFProcessor:
             return "", "failed"
 
     async def process_candidate(
-        self, hubo_id: str, election_id: str, pdf_urls: dict[str, str]
+        self,
+        hubo_id: str,
+        election_id: str,
+        pdf_urls: dict[str, list[str]],
     ) -> DisclosureDocument:
-        """후보자 1명의 모든 PDF 처리. pdf_urls = {'criminal': url, 'assets': url, ...}"""
+        """후보자 1명의 모든 PDF 처리.
+
+        pdf_urls = {'criminal': [url1, url2], 'assets': [url1], ...}
+        한 종류 안에 여러 PDF 페이지 → 텍스트 합치기.
+        """
         doc = DisclosureDocument(hubo_id=hubo_id, election_id=election_id)
-        # 동시 다운로드
+
+        # 모든 (doc_type, page_idx, url) 조합을 펼쳐서 동시 다운로드
+        flat: list[tuple[str, int, str]] = []
+        for doc_type, urls in pdf_urls.items():
+            for i, url in enumerate(urls):
+                flat.append((doc_type, i, url))
+
         results = await asyncio.gather(*[
-            self.fetch_pdf(url, hubo_id, doc_type)
-            for doc_type, url in pdf_urls.items()
+            self.fetch_pdf(url, hubo_id, f"{doc_type}_p{i}")
+            for doc_type, i, url in flat
         ])
-        # 텍스트 추출은 CPU bound이므로 thread pool로
+
+        # doc_type 별로 묶어 텍스트 추출
         loop = asyncio.get_running_loop()
-        for (doc_type, url), pdf_bytes in zip(pdf_urls.items(), results):
-            doc.source_urls[doc_type] = url
-            if pdf_bytes is None:
-                doc.documents[doc_type] = ""
-                doc.extraction_method[doc_type] = "failed"
-                continue
-            text, method = await loop.run_in_executor(None, self.extract_text, pdf_bytes)
-            doc.documents[doc_type] = text
-            doc.extraction_method[doc_type] = method
+        per_type: dict[str, list[tuple[bytes | None, str]]] = {}
+        for (doc_type, _, url), pdf_bytes in zip(flat, results):
+            per_type.setdefault(doc_type, []).append((pdf_bytes, url))
+
+        for doc_type, pages in per_type.items():
+            doc.source_urls[doc_type] = ", ".join(url for _, url in pages)
+            texts: list[str] = []
+            methods: list[str] = []
+            for pdf_bytes, _ in pages:
+                if pdf_bytes is None:
+                    methods.append("failed")
+                    continue
+                text, method = await loop.run_in_executor(None, self.extract_text, pdf_bytes)
+                if text:
+                    texts.append(text)
+                methods.append(method)
+            doc.documents[doc_type] = "\n\n".join(texts)
+            # 페이지 별 method 합쳐서 표기 ('pdfplumber,ocr')
+            doc.extraction_method[doc_type] = ",".join(sorted(set(methods)))
         return doc
 
 
-def build_disclosure_urls(election_id: str, hubo_id: str) -> dict[str, str]:
-    """
-    후보자 정보공개자료 PDF URL 추정 (정적 패턴).
-
-    ⚠️ 실제 URL 패턴은 info.nec.go.kr 페이지를 한 번 inspect해서 확정해야 함.
-    아래는 일반적으로 관찰되는 패턴이며, 실제 적용 전에 1-2개 후보로 테스트 필수.
-    """
-    base = f"{INFO_NEC_BASE}/electioninfo/cnddt_pdf"
-    return {
-        "criminal": f"{base}/{election_id}/{hubo_id}/criminal.pdf",
-        "assets": f"{base}/{election_id}/{hubo_id}/assets.pdf",
-        "military": f"{base}/{election_id}/{hubo_id}/military.pdf",
-        "education": f"{base}/{election_id}/{hubo_id}/education.pdf",
-        "tax": f"{base}/{election_id}/{hubo_id}/tax.pdf",
-    }
-
-
-_PDF_LINK_RE = re.compile(r'(?:src|href)="([^"]+\.pdf[^"]*)"', re.IGNORECASE)
-_KEYWORD_MAP = {
-    "criminal": ["criminal", "전과", "범죄"],
-    "assets": ["asset", "재산"],
-    "military": ["military", "병역"],
-    "education": ["edu", "학력"],
-    "tax": ["tax", "납세", "체납"],
-}
+def normalize_election_id(sg_id: str) -> str:
+    """OpenAPI sgId('20260603') → info.nec.go.kr electionId('0020260603') 변환."""
+    return sg_id if sg_id.startswith("00") else f"00{sg_id}"
 
 
 async def discover_pdf_urls(
-    client: httpx.AsyncClient, election_id: str, hubo_id: str
-) -> dict[str, str]:
+    client: httpx.AsyncClient, sg_id: str, hubo_id: str
+) -> dict[str, list[str]]:
     """
-    Detail 페이지를 fetch해서 실제 PDF URL을 동적으로 추출.
-    build_disclosure_urls() 가 안 맞으면 이 함수를 사용.
+    info.nec.go.kr 의 JSON API 로 후보자 정보공개자료 PDF URL 목록 조회.
+
+    메커니즘 (info.nec.go.kr/common/js/search.js + candidate_detail_info.xhtml 분석):
+        1. /electioninfo/candidate_detail_scanSearchJson.json 호출 (gubun 별)
+           응답 body[i].FILEPATH 에 원본 파일경로 (보통 .tif)
+        2. 확장자를 .PDF 로 교체 후 /unielec_pdf_file/ prefix 부착
+
+    반환: {doc_type: [pdf_url_1, pdf_url_2, ...]}  — 한 종류 안에 여러 페이지 가능
     """
-    detail_url = (
+    election_id = normalize_election_id(sg_id)
+    referer = (
         f"{INFO_NEC_BASE}/electioninfo/candidate_detail_info.xhtml"
         f"?electionId={election_id}&huboId={hubo_id}"
     )
-    try:
-        r = await client.get(detail_url)
-        r.raise_for_status()
-    except Exception as e:
-        log.warning("Detail page fetch 실패 (hubo=%s): %s", hubo_id, e)
-        return {}
-    html = r.text
-    pdf_urls = _PDF_LINK_RE.findall(html)
-    result: dict[str, str] = {}
-    for url in pdf_urls:
-        full_url = url if url.startswith("http") else INFO_NEC_BASE + url
-        url_lower = url.lower()
-        for key, keywords in _KEYWORD_MAP.items():
-            if key in result:
+    json_endpoint = f"{INFO_NEC_BASE}/electioninfo/candidate_detail_scanSearchJson.json"
+
+    result: dict[str, list[str]] = {}
+    for doc_type, gubun in DISCLOSURE_GUBUN.items():
+        try:
+            r = await client.get(
+                json_endpoint,
+                params={
+                    "gubun": gubun,
+                    "electionId": election_id,
+                    "huboId": hubo_id,
+                    "statementId": "CPRI03_candidate_scanSearch",
+                },
+                headers={"Referer": referer},
+            )
+            r.raise_for_status()
+            data = r.json()
+        except Exception as e:
+            log.warning("scanSearchJson 실패 (hubo=%s, gubun=%s): %s", hubo_id, gubun, e)
+            continue
+
+        header = data.get("jsonResult", {}).get("header", {})
+        if header.get("result") != "ok":
+            log.debug("scanSearchJson result=%s (hubo=%s, gubun=%s)",
+                      header.get("result"), hubo_id, gubun)
+            continue
+        body = data.get("jsonResult", {}).get("body") or []
+        urls: list[str] = []
+        for item in body:
+            file_path = item.get("FILEPATH", "")
+            if not file_path:
                 continue
-            if any(k in url_lower for k in keywords):
-                result[key] = full_url
-                break
+            # 확장자 .tif/.jpg → .PDF 로 교체
+            dot = file_path.rfind(".")
+            base = file_path[:dot] if dot >= 0 else file_path
+            urls.append(f"{INFO_NEC_BASE}/unielec_pdf_file/{base}.PDF")
+        if urls:
+            result[doc_type] = urls
     return result

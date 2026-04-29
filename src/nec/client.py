@@ -21,18 +21,18 @@ log = logging.getLogger(__name__)
 
 BASE_URL = "https://apis.data.go.kr/9760000"
 
-# 9회 전국동시지방선거 선거종류코드
+# 9회 전국동시지방선거 선거종류코드 (NEC CommonCodeService 기준 검증)
 # 1: 대통령, 2: 국회의원, 3: 시·도지사, 4: 구·시·군의장,
 # 5: 시·도의원(지역구), 6: 구·시·군의원(지역구),
-# 7: 시·도의원(비례), 8: 구·시·군의원(비례),
+# 8: 광역의원비례대표, 9: 기초의원비례대표,
 # 11: 교육감
 SG_TYPES_LOCAL_ELECTION = {
     "3": "시·도지사",
     "4": "구·시·군의장",
     "5": "시·도의원(지역구)",
     "6": "구·시·군의원(지역구)",
-    "7": "시·도의원(비례)",
-    "8": "구·시·군의원(비례)",
+    "8": "광역의원비례대표",
+    "9": "기초의원비례대표",
     "11": "교육감",
 }
 
@@ -79,10 +79,12 @@ class NECClient:
             r = await self.client.get(f"{BASE_URL}{path}", params=params)
             r.raise_for_status()
             data = r.json()
-            # NEC API는 200 OK여도 body 안에 에러를 넣어 보내는 경우가 있음
+            # NEC API는 200 OK여도 body 안에 에러를 넣어 보내는 경우가 있음.
+            # 성공 코드는 엔드포인트마다 다름: '00', 'INFO-00' 모두 정상 처리 의미.
+            # 'INFO-200' 류는 "데이터 없음" — 빈 응답으로 취급 (에러 아님).
             header = data.get("response", {}).get("header", {})
-            code = header.get("resultCode")
-            if code and code != "00":
+            code = header.get("resultCode") or ""
+            if code and code != "00" and not code.startswith("INFO-"):
                 raise RuntimeError(f"NEC API error {code}: {header.get('resultMsg')}")
             return data
 

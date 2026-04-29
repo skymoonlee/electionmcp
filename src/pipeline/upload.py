@@ -36,6 +36,7 @@ SIDO_SLUG = {
     "전북특별자치도": "jeonbuk",
     "전라북도": "jeonbuk",
     "전라남도": "jeonnam",
+    "전남광주통합특별시": "honam",  # 9회 지선부터 광주+전남 통합
     "경상북도": "gyeongbuk",
     "경상남도": "gyeongnam",
     "제주특별자치도": "jeju",
