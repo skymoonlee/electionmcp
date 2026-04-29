@@ -55,11 +55,28 @@ tags:
 - korea
 - politics
 - nec
+- mcp
 size_categories:
 - 1K<n<10K
 ---
 
 # 9회 전국동시지방선거 (2026.6.3) 후보자 데이터셋
+
+대한민국 제9회 전국동시지방선거 후보자 정보를 중앙선거관리위원회 공식 데이터에서
+수집·정제한 데이터셋. AI 자연어 인터페이스(MCP) 와 결합되어 유권자가 자기 지역구
+후보 정보를 손쉽게 조회·비교할 수 있도록 제공된다.
+
+## 관련 프로젝트
+
+| 항목 | 링크 |
+|---|---|
+| GitHub 저장소 (코드) | https://github.com/skymoonlee/electionmcp |
+| MCP 서버 (라이브) | https://mcp.electionmcp.kr/mcp |
+| 헬스체크 | https://mcp.electionmcp.kr/health |
+
+본 데이터셋만으로도 분석·연구에 사용 가능하지만, MCP 서버를 통한
+Claude·Cursor·Cline 등 AI 클라이언트 연동이 권장된다. 자세한 사용법은
+GitHub 저장소의 README 참조.
 
 ## 출처
 - 중앙선거관리위원회 공공데이터포털 OpenAPI (공공누리 1유형)
