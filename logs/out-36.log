@@ -1,6 +1,0 @@
-2026-04-29 23:23:51: MCP server starting on http://0.0.0.0:8780/mcp (health: /health)
-2026-04-29 23:23:55: INFO:     172.71.151.45:0 - "POST /mcp HTTP/1.1" 200 OK
-2026-04-29 23:24:10: INFO:     172.71.152.22:0 - "POST /mcp HTTP/1.1" 200 OK
-2026-04-29 23:24:11: INFO:     172.69.165.43:0 - "POST /mcp HTTP/1.1" 202 Accepted
-2026-04-29 23:24:12: INFO:     104.22.66.167:0 - "POST /mcp HTTP/1.1" 200 OK
-2026-04-29 23:24:13: INFO:     172.70.92.247:0 - "POST /mcp HTTP/1.1" 200 OK

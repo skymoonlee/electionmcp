@@ -10,3 +10,4 @@ _dataset_README.md
 # 로컬 전용 기획 문서
 flow_*.md
 .claude/
+logs/
